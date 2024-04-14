@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alex.demo_007.HelloController">
+   <children>
+      <VBox alignment="CENTER" layoutX="171.0" layoutY="26.0" prefHeight="400.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="mainWord" contentDisplay="CENTER" onMouseEntered="#onMouseEnteredMainWord" onMouseExited="#onMouseExitedMainWord" text="&lt;ПРИВЕТ&gt;" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <ImageView fx:id="diaImageView" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="textField" onKeyPressed="#onKeyPressedTextField" prefHeight="50.0" prefWidth="600.0">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
